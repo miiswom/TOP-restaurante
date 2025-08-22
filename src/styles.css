@@ -79,6 +79,8 @@ h3 {
 .menu-div {
   /* border: 1px solid lime; */
   display: flex;
+  width: 100%;
+  margin: 0 auto;
   justify-content: center;
   background: rgba(0, 0, 0, 0.5);
   align-items: center;
@@ -162,7 +164,6 @@ header {
   /* border: 1px solid blue; */
   font-size: 1.3em;
   line-height: 1.3em;
-  color: lime;
 }
 
 .aboutus-div {
