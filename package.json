@@ -8,6 +8,7 @@
     "dev": "webpack serve",
     "clean": "rm -rf dist/",
     "test": "echo \"Error: no test specified\" && exit 1",
+    "predeploy" : "git checkout gh-pages && git merge main --no-edit",
     "deploy": "git add dist -f && git commit -m \"Deployment commit\" && git subtree push --prefix dist origin gh-pages "
   },
   "keywords": [],
