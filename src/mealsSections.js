@@ -27,7 +27,7 @@ export function loadMealItems() {
     const mealSection = document.createElement("section");
     const mealSectionTitle = document.createElement("h3");
 
-    mealSection.classList.add("menu-item-section");
+    mealSection.classList.add("menu-section");
     mealSection.style.backgroundImage = `url(${meal.image})`;
     mealSection.ariaLabel = meal.label;
     mealSectionTitle.textContent = meal.name;
