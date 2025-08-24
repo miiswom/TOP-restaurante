@@ -8,14 +8,17 @@ import { mealsContents } from "./asset/texts/mealsContents";
 const meals = [{
     name: "Breakfast",
     image: breakfastImg,
+    label: "A plate containing toasts, eggs, tomatoe and lettuce.",
     content: mealsContents.breakfast
   },
   { name: "Lunch",
     image: lunchImg,
+    label: "A plate containing a burger.",
     content: mealsContents.lunch 
   },
   { name: "Dinner",
     image: dinnerImg,
+    label: "A plate containing a cooked salmon resting on a creamy sauce.",
     content: mealsContents.dinner
   }];
   
@@ -26,6 +29,7 @@ export function loadMealItems() {
 
     mealSection.classList.add("menu-item-section");
     mealSection.style.backgroundImage = `url(${meal.image})`;
+    mealSection.ariaLabel = meal.label;
     mealSectionTitle.textContent = meal.name;
 
     menuDiv.appendChild(mealSection)

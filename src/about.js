@@ -10,6 +10,7 @@ export function loadAboutUsPage() {
   aboutUsTitle.textContent = "About Us";
   aboutUsPara.textContent = aboutUsText;
   aboutUsImg.src = chef;
+  aboutUsImg.alt = "A cheffe decorating a tray of chocolate muffin with cream using a piping bag."
   aboutUsDiv.classList.add("aboutus-div");
 
   mainDiv.innerHTML = "";
