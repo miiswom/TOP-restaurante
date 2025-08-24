@@ -1,17 +1,27 @@
-/*
-<!--Home-->
-    <h1>Welcome to Fratelli</h1>
-    <button id="about-us">About us</button>
-*/
 // ********* HomePage ********* 
-const homeBtn = document.querySelector("#home-btn");
+import { homeParaText } from "./asset/texts/placeholderText.js";
+import { mainDiv } from ".";
+import {loadAboutUsPage} from "./about.js";
+export const aboutUsBtn = document.createElement("button");
+export const homeBtn = document.querySelector("#home-btn");
 const homeTitle = document.createElement("h1");
-const homeDiv = document.createElement("div")
-const homePara = document.createElement("p")
+const homeDiv = document.createElement("div");
+const homePara = document.createElement("p");
 
-import { homeParaText } from "./asset/homeParaText.js"
+aboutUsBtn.addEventListener("click", () => {
+  loadAboutUsPage()
+});
 
-homePara.textContent = homeParaText
+export function loadHomePage() {
+  homeTitle.textContent = "Welcome to Fratelli!";
+  homeDiv.classList.add("home-div");
+  homePara.textContent = homeParaText
+  aboutUsBtn.textContent = "About ➜";
+  aboutUsBtn.classList.add("btn");
 
-
-export {homeBtn, homeTitle, homeDiv, homePara, homeParaText}
+  mainDiv.innerHTML = "";
+  mainDiv.appendChild(homeTitle);
+  mainDiv.appendChild(homeDiv);
+  homeDiv.appendChild(homePara);
+  homeDiv.appendChild(aboutUsBtn);
+};

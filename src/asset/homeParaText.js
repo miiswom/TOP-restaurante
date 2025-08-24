@@ -1,1 +1,0 @@
-export const homeParaText = "LoremLorem ipsum dolor sit amet consectetur adipisicing elit. Libero, dolore corrupti! Itaque dolores consectetur quasi, dolor voluptate nulla harum, eligendi ratione, doloremque quaerat a modi. Nostrum cumque fugiat obcaecati animi."

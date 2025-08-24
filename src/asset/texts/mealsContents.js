@@ -1,5 +1,5 @@
-const breakfastText = `
-<h2 class="meal-title">Breakfast</h2>
+export const mealsContents = {
+breakfast : ` <h2 class="meal-title">Breakfast</h2>
 <h3>Waffles, French toast or Pancakes</h3>
 <p>golden brown warm stacked waffles, french toast or pancakes with butter<p>
 <br>
@@ -18,9 +18,9 @@ const breakfastText = `
 <h3> Halal Sausage and Halal Turkey Bacon</h3>
 <p>thick-cut apple wood sausage and apple-wood bacon served on platter<p>
 <br>
-<h3>Fresh Fruits<h3>`
+<h3>Fresh Fruits<h3>`,
 
-const lunchText = `<h2 class="meal-title">Lunch</h2>
+lunch: `<h2 class="meal-title">Lunch</h2>
 <h3>Spinach Artichoke Dip</h3>
 <p>crisp wonts baked with marinated artichoke hearts and organic baby spinach</p>
 <br>
@@ -39,7 +39,7 @@ const lunchText = `<h2 class="meal-title">Lunch</h2>
 <h3>Flat Bread</h3>
 <p>toasted pita bread topped with feta cheese, tomatoes, and sweet basil then dirzzled blasmic glaze</p>
 <br>
-<h3>Buffalo Chicken Dip</h3?
+<h3>Buffalo Chicken Dip</h3>
 <p>tender chunks of chicken tossed in buffalo sauce combined with a authentic cheddar cheese and creamy ranch sauce</p>
 <br>
 <h3>Garden Salad</h3>
@@ -49,10 +49,9 @@ const lunchText = `<h2 class="meal-title">Lunch</h2>
 <p>organic chopped greens, tomato, crisp halal turkey bacon, boiled, grilled chicken breast hard-boiled eggs avocado</p>
 <br>
 <h3>Southwestern Salad with Creamy-Lime Dressing</h3>
-<p>refreshing garden tossed, tomato, onion and avocado and corn drizzled with creamy lime cilantro dressing</p>`;
+<p>refreshing garden tossed, tomato, onion and avocado and corn drizzled with creamy lime cilantro dressing</p>`,
 
-const dinnerText = `
-<h2 class="meal-title">Dinner</h2>
+dinner: ` <h2 class="meal-title">Dinner</h2>
 <h3>Carved Tenderloin Beef</h3>
 <p>Halal Angus beef tied and roasted then carved for service, with a traditional brown gravy and sautéed mushroom and onions / served garlic mashed potatoes</p>
 <br>
@@ -69,6 +68,5 @@ const dinnerText = `
 <p>fresh pan seared herb salmon drizzled with lemon butter sauce / served with saffron rice</p>
 <br>
 <h3>Red Snapper</h3>
-<p>blacken red snapper drizzled with lemon butter sauce topped off with tomatoes-onion relish / served with red beans and rice</p>`;
-
-export {breakfastText, lunchText, dinnerText}
+<p>blacken red snapper drizzled with lemon butter sauce topped off with tomatoes-onion relish / served with red beans and rice</p>`
+}
